@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0; }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%; } }
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #0a0e5c;
+  overflow: hidden;
+  z-index: -1; }
+  .background > li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 16s linear infinite; }
+  .background > li:nth-of-type(0) {
+    left: 60%;
+    width: 24px;
+    height: 24px;
+    bottom: -24px;
+    animation-delay: 1s; }
+  .background > li:nth-of-type(1) {
+    left: 59%;
+    width: 31px;
+    height: 31px;
+    bottom: -31px;
+    animation-delay: 5s; }
+  .background > li:nth-of-type(2) {
+    left: 59%;
+    width: 55px;
+    height: 55px;
+    bottom: -55px;
+    animation-delay: 6s; }
+  .background > li:nth-of-type(3) {
+    left: 59%;
+    width: 54px;
+    height: 54px;
+    bottom: -54px;
+    animation-delay: 3s; }
+  .background > li:nth-child(4) {
+    left: 7%;
+    width: 63px;
+    height: 63px;
+    bottom: -63px;
+    animation-delay: 4s; }
+  .background > li:nth-child(5) {
+    left: 26%;
+    width: 18px;
+    height: 18px;
+    bottom: -18px;
+    animation-delay: 22s; }
+  .background > li:nth-child(6) {
+    left: 22%;
+    width: 57px;
+    height: 57px;
+    bottom: -57px;
+    animation-delay: 3s; }
+  .background > li:nth-child(7) {
+    left: 66%;
+    width: 39px;
+    height: 39px;
+    bottom: -39px;
+    animation-delay: 3s; }
+  .background > li:nth-child(8), .background > li:nth-child(9) {
+    left: 71%;
+    width: 44px;
+    height: 44px;
+    bottom: -44px;
+    animation-delay: 35s; }
+  .background > li:nth-child(9) {
+    left: 35%;
+    animation-delay: 14s; }
+  .background > li:nth-child(10) {
+    left: 31%;
+    width: 34px;
+    height: 34px;
+    bottom: -34px;
+    animation-delay: 8s; }
+  .background > li:nth-child(11) {
+    left: 35%;
+    width: 48px;
+    height: 48px;
+    bottom: -48px;
+    animation-delay: 45s; }
+  .background > li:nth-child(12) {
+    left: 77%;
+    width: 63px;
+    height: 63px;
+    bottom: -63px;
+    animation-delay: 42s; }
+  .background > li:nth-child(13) {
+    left: 33%;
+    width: 18px;
+    height: 18px;
+    bottom: -18px;
+    animation-delay: 58s; }
+  .background > li:nth-child(14) {
+    left: 86%;
+    width: 19px;
+    height: 19px;
+    bottom: -19px;
+    animation-delay: 66s; }
+  .background > li:nth-child(15) {
+    left: 83%;
+    width: 16px;
+    height: 16px;
+    bottom: -16px;
+    animation-delay: 19s; }
+  .background > li:nth-child(16) {
+    left: 43%;
+    width: 61px;
+    height: 61px;
+    bottom: -61px;
+    animation-delay: 37s; }
+  .background > li:nth-child(17) {
+    left: 26%;
+    width: 6px;
+    height: 6px;
+    bottom: -6px;
+    animation-delay: 26s; }
+
+form {
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(240, 248, 255, 0.1);
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  box-shadow: -1px 0px 15px black;
+  padding: 150px 60px;
+  text-align: center; }
+  form > h3 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px 1px blue; }
+  form > input[type=text], form > input[type=button] {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 0px;
+    padding-left: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 5px black;
+    outline: none; }
+    form > input[type=text]::placeholder, form > input[type=button]::placeholder {
+      color: blue;
+      font-weight: 500; }
+    form > input[type=text]:focus, form > input:focus[type=button] {
+      border: 1px solid blue; }
+  form > input[type=button] {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #020261;
+    transition: all 300ms linear; }
+    form > input[type=button]:hover {
+      background-color: #2a2a5f; }
